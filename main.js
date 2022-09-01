@@ -51,7 +51,7 @@ function startTimer() {
         if(day_time != hours) {
             day_time = hours;
             let time = 'day';
-            if(day_time > 12) {
+            if(day_time < 6 || day_time > 18) {
                 time = 'night';
             }
             background.src = './static/img/' + time + '.png';
@@ -90,7 +90,7 @@ async function loadData(position) {
         dog.src = './static/img/dog_sad.png';
         dog.classList.add('raining');
     } 
-    if(day_time < 12) {
+    if(day_time < 10) {
         dog.src = './static/img/dog_sleeping.png';
         dog.classList.add('sleeping');
         dog_house[1].style.display = 'inline-block';
