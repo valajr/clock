@@ -93,7 +93,6 @@ async function loadData(position) {
     if(day_time < 12) {
         dog.src = './static/img/dog_sleeping.png';
         dog.classList.add('sleeping');
-        dog_house[1].src = './static/img/dog_house_up.png';
         dog_house[1].style.display = 'inline-block';
     }
     wind_speed = data.current.wind_speed;
