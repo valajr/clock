@@ -1,0 +1,140 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: serif;
+    font-size: 1em;
+}
+
+main {
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 90vh;
+}
+
+.temp, .feels {
+    position: absolute;
+    left: var(--distance);
+}
+
+.temp {
+    --distance: 0;
+}
+
+.feels {
+    --distance: 10%;
+}
+
+.calendar {
+    position: absolute;
+    top: 33%;
+    right: 3%;
+    font-size: 1.5em;
+}
+
+.background {
+    position: absolute;
+    max-height: 90vh;
+    width: 100vw;
+}
+
+.weather {
+    position: absolute;
+    left: 5%;
+    max-height: 40%;
+    width: auto;
+}
+
+.dog-house {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    width: 25%;
+    height: auto;
+}
+
+.dog {
+    position: absolute;
+    left: 20%;
+    bottom: 15%;
+    height: 20%;
+}
+
+.raining {
+    left: 11.5%;
+}
+
+.sleeping {
+    left: 5%;
+    bottom: 18%;
+}
+
+.house {
+    position: absolute;
+    left: 0;
+    max-height: 90vh;
+    width: 100vw;
+}
+
+footer {
+    display: grid;
+    height: 5vh;
+    max-width: 100vw;
+    grid-template-columns: repeat(9, 1fr);
+    background-color: #c0c0c5;
+    border: 2px solid;
+    border-color: white transparent transparent transparent;
+}
+
+.start, .window, .toolbar {
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+}
+
+.start {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    border-color: white black black white;
+}
+
+.start > img {
+    height: 4vh;
+    width: auto;
+}
+
+.window {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: bolder;
+    width: 100%;
+    border-color: black transparent white black;
+}
+
+.window > img {
+    height: 4vh;
+    width: auto;
+}
+
+.pseudo-window {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+    border: 2px solid;
+    border-color: black white white transparent;
+}
+
+.toolbar {
+    width: 98%;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    border-color: grey white white grey;
+}
+
+.toolbar > img {
+    height: 4vh;
+    width: auto;
+}
