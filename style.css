@@ -11,7 +11,7 @@ main {
     position: relative;
     width: 100vw;
     height: 56.25vw;
-    max-height: 90vh;
+    max-height: 93vh;
 }
 
 .temp, .feels, .calendar, .background, .weather, .dog-house, .dog, .house {
